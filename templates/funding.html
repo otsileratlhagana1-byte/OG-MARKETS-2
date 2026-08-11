@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<div class="auth card"><p class="eyebrow">ACCOUNT FUNDING</p><h1>{{kind|capitalize}}</h1><p class="muted">Demo mode — no real money is processed.</p><form method="post"><input name="amount" type="number" min="1" step=".01" placeholder="Amount (R)" required><button class="btn">Submit Demo Request</button></form></div>{% endblock %}

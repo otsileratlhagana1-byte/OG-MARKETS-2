@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>Transactions</h1><div class="card table"><table><tr><th>Type</th><th>Amount</th><th>Status</th><th>Date</th></tr>{% for x in tx %}<tr><td>{{x.kind}}</td><td>R {{x.amount}}</td><td>{{x.status}}</td><td>{{x.created_at}}</td></tr>{% endfor %}</table></div>{% endblock %}
